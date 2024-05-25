@@ -36,5 +36,17 @@ fn main() {
         ],
     };
 
+    let nevada = State {
+        name: String::from("Nevada"),
+        population: 3080000,
+        capital: City {
+            name: String::from("Carson City"),
+        },
+        national_park: vec![NationalPark {
+            name: String::from("Great Bassin"),
+        }],
+    };
+
     println!("{:?}", washington);
+    println!("{:?}", nevada);
 }

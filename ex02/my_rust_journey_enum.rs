@@ -7,8 +7,8 @@ enum Action {
 fn dispatch(action: Action) {
     match action {
         Action::Timer(int) => println!("AI -- Timer requested {}", int),
-        Action::Weather(message) => println!("AI -- Weather for this city {}", message),
-        Action::Music(song) => println!("AI -- Play following song requested {} requested", song),
+        Action::Weather(message) => println!("AI -- Weather for this city {} requested", message),
+        Action::Music(song) => println!("AI -- Play following song requested {}", song),
     }
 }
 
